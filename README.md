@@ -2,7 +2,7 @@
 
 Activate the Python virtual environment and start the FastAPI server:
 
-\`\`\`bash
+```bash
 # Activate virtual environment
 venv\Scripts\activate
 
@@ -11,7 +11,7 @@ pip install -r requirements.txt
 
 # Start FastAPI server
 uvicorn app:app --reload
-\`\`\`
+```
 
 The API will be available at `http://localhost:8000`
 
@@ -19,9 +19,9 @@ The API will be available at `http://localhost:8000`
 
 Start a local Hardhat blockchain node:
 
-\`\`\`bash
+```bash
 npx hardhat node
-\`\`\`
+```
 
 This will start a local Ethereum network for testing smart contracts.
 
@@ -29,16 +29,16 @@ This will start a local Ethereum network for testing smart contracts.
 
 Deploy your smart contracts to the local Hardhat network:
 
-\`\`\`bash
+```bash
 npx hardhat run scripts/deploy.ts --network localhost
-\`\`\`
+```
 
 ### Terminal 4: Frontend
 
 Start the frontend development server:
 
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
 The frontend will typically be available at `http://localhost:3000`
