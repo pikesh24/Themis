@@ -1,19 +1,44 @@
-Open the **first terminal** and run the following commands:
+### Terminal 1: Backend (FastAPI)
 
-Activate virtual environment
-`venv\Scripts\activate`
+Activate the Python virtual environment and start the FastAPI server:
 
-Install Python dependencies
-`pip install -r requirements.txt`
+\`\`\`bash
+# Activate virtual environment
+venv\Scripts\activate
 
-Start FastAPI server
-`uvicorn app:app --reload`
+# Install Python dependencies
+pip install -r requirements.txt
 
-Open the **second terminal** and start a local Hardhat node:
-`npx hardhat node`
+# Start FastAPI server
+uvicorn app:app --reload
+\`\`\`
 
-Open the **third terminal** and run:
-`npx hardhat run scripts/deploy.ts --network localhost`
+The API will be available at `http://localhost:8000`
 
-Open the **fourth terminal** and start the frontend:
-`npm run dev`
+### Terminal 2: Hardhat Node
+
+Start a local Hardhat blockchain node:
+
+\`\`\`bash
+npx hardhat node
+\`\`\`
+
+This will start a local Ethereum network for testing smart contracts.
+
+### Terminal 3: Deploy Smart Contracts
+
+Deploy your smart contracts to the local Hardhat network:
+
+\`\`\`bash
+npx hardhat run scripts/deploy.ts --network localhost
+\`\`\`
+
+### Terminal 4: Frontend
+
+Start the frontend development server:
+
+\`\`\`bash
+npm run dev
+\`\`\`
+
+The frontend will typically be available at `http://localhost:3000`
